@@ -45,6 +45,7 @@
         <jaxb.version>2.3.1</jaxb.version>
         <awaitility.version>4.0.3</awaitility.version>
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+        <logstash.version>6.5</logstash.version>
     </properties>
 
     <dependencyManagement>
@@ -82,6 +83,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
